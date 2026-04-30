@@ -14,6 +14,7 @@ export default function FormInicioSesion() {
   };
 
   return (
+    <div className="container-login">
       <Card className="card-login">
           <Card.Body className="card-body">
             <div className="card-header-login">
@@ -43,8 +44,11 @@ export default function FormInicioSesion() {
               </div>
     
           </Form>
-          <Button className="bottoninit w-100"></Button>
+          <div className="button">
+          <Button className="bottoninit w-100">Iniciar Secion</Button>
+          </div>
           </Card.Body>
-          </Card>   
+          </Card>  
+          </div> 
   );
 }

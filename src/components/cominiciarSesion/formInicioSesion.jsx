@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Card, Button, Form } from "react-bootstrap";
+import { Card, Button, Form, FormGroup, FormLabel, FormControl } from "react-bootstrap";
 import "./FormInicioSesion.css";
+import { LuStore } from "react-icons/lu";
 
 export default function FormInicioSesion() {
 
@@ -13,37 +14,37 @@ export default function FormInicioSesion() {
   };
 
   return (
-    <div className="container-login">
-
       <Card className="card-login">
-
-        <h2 className="titulo">Los Corceles 🐎</h2>
-
-        <Form onSubmit={handleLogin}>
-
-          <Form.Control
-            className="mb-3"
-            placeholder="Usuario"
-            value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
-          />
-
-          <Form.Control
-            type="password"
-            className="mb-3"
-            placeholder="Contraseña"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-
-          <Button className="w-100">
-            Iniciar sesión
-          </Button>
-
-        </Form>
-
-      </Card>
-
-    </div>
+          <Card.Body className="card-body">
+            <div className="card-header-login">
+              <div className="icono"><LuStore /></div>
+              <h2 className="titulo-login">Los Corceles </h2>
+              <p className="desc-login">Sistema de ventas e inventario</p>
+            </div>
+            
+  
+          <Form className="form" onSubmit={handleLogin}>
+            <div className="inputs">
+            <FormLabel className="labelform">Usuario</FormLabel>
+              <Form.Control
+              className="mb-3"
+              type="text"
+              placeholder="usuario"
+              value={usuario}
+              onChange={(e) => setUsuario(e.target.value)}/>
+            </div>
+             <div className="inputs">
+              <Form.Label className="labelform">Contraseña</Form.Label>
+                <Form.Control className="mb-3"
+                type="password"
+                placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}/>
+              </div>
+    
+          </Form>
+          <Button className="bottoninit w-100"></Button>
+          </Card.Body>
+          </Card>   
   );
 }

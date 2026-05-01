@@ -1,0 +1,41 @@
+.Card {
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* contenedor tabs */
+.custom-tabs {
+  display: inline-flex;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* QUITAR ESTILO BOOTSTRAP */
+.custom-tabs .nav {
+  border-bottom: none !important;
+}
+
+/* BOTONES */
+.custom-tabs .nav-link {
+  color: #000;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+/* ACTIVO */
+.custom-tabs .nav-link.active {
+  background: #e17100;
+  color: #fff;
+}
+
+/* HOVER */
+.custom-tabs .nav-link:not(.active):hover {
+  background: #f5f5f5;
+}

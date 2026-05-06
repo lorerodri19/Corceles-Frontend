@@ -1,3 +1,7 @@
 body{
     background-color: #f5f1e6;
 }
+/*padding*/
+.section-padding{
+  padding: 16px 24px ;
+}

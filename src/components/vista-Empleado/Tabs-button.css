@@ -11,7 +11,9 @@
   background: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
+  position: relative;   /* 👈 IMPORTANTE */
+  left: -30px;          /* 👈 lo corre a la izquierda */
 }
 
 /* QUITAR ESTILO BOOTSTRAP */

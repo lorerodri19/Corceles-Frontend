@@ -1,76 +1,96 @@
+.card-facturacion{
+  border-radius: 12px;
+  
+}
+/* ENCABEZADO */
 .encabezado-facturacion {
-  background-color: #973c00;/*COLOR FONDO */
-  border-radius: 12px 12px 0 0; 
+  background-color: #973c00;
+  border-radius: 12px 12px 0 0;
+}
+/* TEXTOS */
+.fecha-actual {
+  font-size: 14px;
+  color: #fef3c6;
+}
+.label{
+  font-size: 15px; /*tamaño texto*/
+    font-weight: 500;/*negrilla*/
 }
 
-.title-facturacion {
-  background-color: #973c00;
-  color: #fff; /*COLOR TEXTO*/
-  display: flex; 
-  justify-content: space-between;
-  align-items: flex-start; /*alinea a la izquierda*/
-  padding: 16px 24px 16px 24px;
-  flex-direction: column; /*uno debajo de otro*/
+/* INPUT FOCUS GLOBAL */
+.form-control:focus {
+  border-color: #e65100 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.356) !important;
 }
-.title-facturacion h2 {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 22px;
-}
-.fecha-actual {
-  margin: 4px 0 0 0; /*espacio debajo del título*/
-  font-size: 14px;
-  color: #fef3c6;/*COLOR TEXTO*/
-}
-.cuerpo-cod-can{
-    background-color: #fff;/*color fondo */
-    padding: 16px 24px 0px 24px;
-}
-.cuerpo-cod-can .form-label {
-  font-size: 15px; /*tamaño texto*/
-  font-weight: 500;/*negrilla*/
-}
-.cuerpo-cod-can .form-control:focus{
-    border-color: #e65100 !important; /*color del borde */ 
-    box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.356) !important; /*color de sobra*/ 
-}
-.Botton-agregar{
-    padding: 0px 24px 0px 24px;
-}
-.Botton-agregar button {
-  width: 100%;       /* lo hace largo */
+
+/* BOTÓN AGREGAR */
+.Botton-agregar {
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #e65100;/*color del boton*/
-  border: #e65100;
+  color: #fff !important;
+  background-color: #e65100 !important;
+  border: 1px solid #e65100 !important;
 }
-.Botton-agregar button:hover{
-    background-color: #b94100;/*color a pasar el raton */
+
+.Botton-agregar:hover {
+  background-color: #b94100 !important;
 }
-.cuerpo-tot-di-ca{
-    position: relative;
-  padding: 16px 24px;
+
+/* BLOQUE INFERIOR */
+.cuerpo2 {
+  position: relative;
   background-color: #fffbeb;
   border: 1px solid #fee685;
   border-radius: 16px;
 }
-.cuerpo-tot-di-ca .form-label {
-    font-size: 15px; /*tamaño texto*/
-    font-weight: 500;/*negrilla*/
+
+/* TOTAL */
+.total-pagar {
+  position: static;
+  top: 16px;
+  right: 24px;
+  text-align: right;
 }
-.cuerpo-tot-di-ca .to{
-    color: #973c00;
-    font-weight: 700;/*negrilla*/
+
+.to {
+  color: #973c00;
+  font-weight: 700;
 }
-.total-pagar{
-    position: absolute;
-    top: 16px;
-    right: 24px;
-    text-align: right;
+
+/* BOTONES TIPO VENTA */
+.button-section {
+  display: flex;
+  gap: 12px;
 }
-.cuerpo-tot-di-ca .total{
-    margin: 0px;
+
+.button-section .btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ced4da;
+}
+
+.button-section .btn.active {
+  color: #fff !important;
+  background-color: #e65100 !important;
+  border-color: #e65100 !important;
+}
+
+/* BOTÓN FINALIZAR */
+.botton-finalizar:disabled {
+  background-color: #e0e0e0 !important;
+  border-color: #e0e0e0 !important;
+  color: #9e9e9e !important;
+  cursor: not-allowed;
+}
+
+.botton-finalizar:not(:disabled) {
+  background-color: #00a63e !important;
+  border-color: #00a63e !important;
+  color: #fff !important;
+}
+
+.botton-finalizar:not(:disabled):hover {
+  background-color: #008236 !important;
 }

@@ -1,0 +1,34 @@
+.tarjetas {
+  display: flex;          /* los pone en fila */
+  gap: 20px;              /*espacio entre cards */
+}
+
+.tarjetas .card {
+  flex: 1;                /*todos del mismo tamaño */
+  border-radius: 12px;
+  padding: 20px;
+}
+.Total-vendido{
+    background-color:#fe9a00;
+    border: 1px solid  #e17100;
+}
+.productos-vendidos{
+    background-color:#00c951;
+    border: 1px solid  #00a63e;
+}
+.total-ventas{
+    background-color: #2b7fff;
+    border: 1px solid  #155dfc;
+}
+.tex,
+.to,
+.tarjetas-icons{
+    color: #ffff;
+}
+.tarjetas-icons {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 70px;
+  opacity: 0.6;
+}

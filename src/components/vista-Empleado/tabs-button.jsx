@@ -1,14 +1,16 @@
 import "./Tabs-button.css";
+import"./facturacion.jsx";
 import { Container, Tab, Tabs } from "react-bootstrap";
+import Facturacion from "./facturacion.jsx";
 
 function TabsSecciones() {
     return (
         <>
         <Container className='Card'>
         
-            <Tabs defaultActiveKey="Facturacion"  className="mb-3 custom-tabs" variant="tabs" fill>
+            <Tabs defaultActiveKey="Facturacion"  className="mb-3 px-0 custom-tabs" variant="tabs" >
                 <Tab eventKey="Facturacion" title="Facturación" >
-                    
+                    <Facturacion/>
                 </Tab>
                 <Tab eventKey="Ventas" title="Ventas" >
                     

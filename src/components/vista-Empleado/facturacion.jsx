@@ -1,6 +1,7 @@
 import { Container, CardBody, Card, Button, Form, Row, Col } from "react-bootstrap";
 import { LuShoppingCart } from "react-icons/lu";
 import { useState } from "react";
+import "./Facturacion.css";
 
 
 function Facturacion (){
@@ -20,11 +21,12 @@ function Facturacion (){
                     {/* ENCABEZADO */}
                     <div className="encabezado-facturacion">
                         <div className="title-facturacion">
-                        <LuShoppingCart /> Sistema de Facturación
+                        <h2><LuShoppingCart /> Sistema de Facturación</h2>
                         <p className="fecha-actual">fecha actual</p>
                         </div>
                     </div>
                      {/* INPUTS */}
+                     <div className="cuerpo-cod-can">
                      <Row className="mb-3">
                         <Col md={8}>
                         <Form.Group>
@@ -41,22 +43,22 @@ function Facturacion (){
                         <Form.Group>
                             <Form.Label>Cantidad</Form.Label>
                             <Form.Control
-                            type="number"
+                            type="text"
                             value={cantidad}
-                            onChange={(e) => setCantidad(e.target.value)}
+                            onChange={(e) => setCantidad(Number(e.target.value))}
                             />
                         </Form.Group>
                         </Col>
                      </Row>
+                     </div>
                      {/* BOTÓN AGREGAR */}
+                     <div className="Botton-agregar">
                      <Button>
                         + Agregar al carrito 
                      </Button>
-                     {/* TOTAL */}
-                     <div>
-
                      </div>
-                    <div>
+                    <div className="cuerpo-tot-di-ca">
+                    <div className="total-pagar">
                         <p className="total">Total a pagar </p>
                         <h2 className="to">${total}</h2>
                     </div>
@@ -105,6 +107,7 @@ function Facturacion (){
                     >
                         Finalizar venta
                     </Button>
+                    </div>
 
                 </CardBody>
             </Card>

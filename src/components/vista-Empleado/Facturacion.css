@@ -1,0 +1,76 @@
+.encabezado-facturacion {
+  background-color: #973c00;/*COLOR FONDO */
+  border-radius: 12px 12px 0 0; 
+}
+
+.title-facturacion {
+  background-color: #973c00;
+  color: #fff; /*COLOR TEXTO*/
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start; /*alinea a la izquierda*/
+  padding: 16px 24px 16px 24px;
+  flex-direction: column; /*uno debajo de otro*/
+}
+.title-facturacion h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+}
+.fecha-actual {
+  margin: 4px 0 0 0; /*espacio debajo del título*/
+  font-size: 14px;
+  color: #fef3c6;/*COLOR TEXTO*/
+}
+.cuerpo-cod-can{
+    background-color: #fff;/*color fondo */
+    padding: 16px 24px 0px 24px;
+}
+.cuerpo-cod-can .form-label {
+  font-size: 15px; /*tamaño texto*/
+  font-weight: 500;/*negrilla*/
+}
+.cuerpo-cod-can .form-control:focus{
+    border-color: #e65100 !important; /*color del borde */ 
+    box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.356) !important; /*color de sobra*/ 
+}
+.Botton-agregar{
+    padding: 0px 24px 0px 24px;
+}
+.Botton-agregar button {
+  width: 100%;       /* lo hace largo */
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #e65100;/*color del boton*/
+  border: #e65100;
+}
+.Botton-agregar button:hover{
+    background-color: #b94100;/*color a pasar el raton */
+}
+.cuerpo-tot-di-ca{
+    position: relative;
+  padding: 16px 24px;
+  background-color: #fffbeb;
+  border: 1px solid #fee685;
+  border-radius: 16px;
+}
+.cuerpo-tot-di-ca .form-label {
+    font-size: 15px; /*tamaño texto*/
+    font-weight: 500;/*negrilla*/
+}
+.cuerpo-tot-di-ca .to{
+    color: #973c00;
+    font-weight: 700;/*negrilla*/
+}
+.total-pagar{
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    text-align: right;
+}
+.cuerpo-tot-di-ca .total{
+    margin: 0px;
+}

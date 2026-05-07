@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import IniciarSesion from "../pages/IniciarSesion";
-import Facturacion from "../components/vista-Empleado/ventas"
+import Facturacion from "../components/vista-Empleado/tabs-button"
 
 
 export const AppRoutes = () => {

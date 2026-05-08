@@ -1,0 +1,26 @@
+
+/* QUITAR ESTILO BOOTSTRAP */
+.custom-tabs.nav-tabs {
+  padding: 6px;
+}
+
+/* BOTONES */
+.custom-tabs .nav-link {
+  color: #000;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+/* ACTIVO */
+.custom-tabs .nav-link.active {
+  background: #e17100;
+  color: #fff;
+}
+
+/* HOVER */
+.custom-tabs .nav-link:not(.active):hover {
+  background: #f5f5f5;
+}

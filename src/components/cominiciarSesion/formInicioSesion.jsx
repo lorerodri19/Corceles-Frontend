@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Card, Button, Form, FormGroup, FormLabel, FormControl } from "react-bootstrap";
-import "./FormInicioSesion.css";
+import "./formInicioSesion.css";
 import { LuStore } from "react-icons/lu";
+import { FaLock } from "react-icons/fa";
 
-export default function FormInicioSesion() {
+function FormInicioSesion() {
 
   const [usuario, setUsuario] = useState("");
   const [password, setPassword] = useState("");
@@ -24,7 +25,7 @@ export default function FormInicioSesion() {
             </div>
             
   
-          <Form className="form" onSubmit={handleLogin}>
+          <Form className="section-padding" onSubmit={handleLogin}>
             <div className="inputs">
             <FormLabel className="labelform">Usuario</FormLabel>
               <Form.Control
@@ -44,11 +45,13 @@ export default function FormInicioSesion() {
               </div>
     
           </Form>
-          <div className="button">
-          <Button className="bottoninit w-100">Iniciar Secion</Button>
+          <div className="button section-padding">
+          <Button type="submit" className="bottoninit " >Iniciar Sesión</Button>
           </div>
+          <p className="nota section-padding"><FaLock /> Acceso exclusivo para personal autorizado</p>
           </Card.Body>
           </Card>  
           </div> 
   );
 }
+export default FormInicioSesion;

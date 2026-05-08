@@ -1,0 +1,9 @@
+.card-producto{
+    border-radius: 12px;
+}
+/* ENCABEZADO */
+.encabezado-productos{
+    background-color: #973c00;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+}

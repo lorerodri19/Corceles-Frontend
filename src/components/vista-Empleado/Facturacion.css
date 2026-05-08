@@ -1,0 +1,72 @@
+.card-facturacion{
+  border-radius: 12px;
+
+}
+/* ENCABEZADO */
+.encabezado-facturacion {
+  background-color: #973c00;
+  border-radius: 12px 12px 0 0;
+}
+/* TEXTOS */
+.fecha-actual {
+  font-size: 14px;
+  color: #fef3c6;
+}
+/* BLOQUE INFERIOR */
+.cuerpo2 {
+  position: relative;
+  background-color: #fffbeb;
+  border: 1px solid #fee685;
+  border-radius: 16px;
+}
+
+/* TOTAL */
+.total-pagar {
+  position: static;
+  top: 16px;
+  right: 24px;
+  text-align: right;
+}
+
+.to {
+  color: #973c00;
+  font-weight: 700;
+}
+
+/* BOTONES TIPO VENTA */
+.button-section {
+  display: flex;
+  gap: 12px;
+}
+
+.button-section .btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ced4da;
+}
+
+.button-section .btn.active {
+  color: #fff !important;
+  background-color: #e65100 !important;
+  border-color: #e65100 !important;
+}
+
+/* BOTÓN FINALIZAR */
+.botton-finalizar:disabled {
+  background-color: #e0e0e0 !important;
+  border-color: #e0e0e0 !important;
+  color: #9e9e9e !important;
+  cursor: not-allowed;
+}
+
+.botton-finalizar:not(:disabled) {
+  background-color: #00a63e !important;
+  border-color: #00a63e !important;
+  color: #fff !important;
+}
+
+.botton-finalizar:not(:disabled):hover {
+  background-color: #008236 !important;
+}

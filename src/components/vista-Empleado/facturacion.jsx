@@ -5,7 +5,6 @@ import "./Facturacion.css";
 
 
 function Facturacion (){
-
     const [codigo, setCodigo] = useState("");
     const [cantidad, setCantidad] = useState(1);
     const [total, setTotal] = useState(0);

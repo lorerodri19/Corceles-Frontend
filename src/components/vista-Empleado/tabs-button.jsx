@@ -3,6 +3,7 @@ import"./facturacion.jsx";
 import { Container, Tab, Tabs } from "react-bootstrap";
 import Facturacion from "./facturacion.jsx";
 import Ventas from "./ventas.jsx";
+import Productos from "./productos.jsx"
 
 function TabsSecciones() {
     return (
@@ -17,7 +18,7 @@ function TabsSecciones() {
                     <Ventas/>
                 </Tab>
                 <Tab eventKey="Productos" title="Productos" >
-                    
+                    <Productos/>
                 </Tab>
             </Tabs>
             

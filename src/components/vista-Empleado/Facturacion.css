@@ -1,5 +1,6 @@
 .card-facturacion{
   border-radius: 12px;
+
 }
 /* ENCABEZADO */
 .encabezado-facturacion {
@@ -11,30 +12,6 @@
   font-size: 14px;
   color: #fef3c6;
 }
-.label{
-  font-size: 15px; /*tamaño texto*/
-    font-weight: 500;/*negrilla*/
-}
-
-/* INPUT FOCUS GLOBAL */
-.form-control:focus {
-  border-color: #e65100 !important;
-  box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.356) !important;
-}
-
-/* BOTÓN AGREGAR */
-.Botton-agregar {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff !important;
-  background-color: #e65100 !important;
-  border: 1px solid #e65100 !important;
-}
-
-.Botton-agregar:hover {
-  background-color: #b94100 !important;
-}
-
 /* BLOQUE INFERIOR */
 .cuerpo2 {
   position: relative;

@@ -10,7 +10,7 @@ function TabsSecciones() {
         <>
         <Container className='Card'>
         
-            <Tabs defaultActiveKey="Facturacion"  className="mb-3 px-0 custom-tabs" variant="tabs" >
+            <Tabs defaultActiveKey="Facturacion"  className="mb-3 custom-tabs" variant="tabs" >
                 <Tab eventKey="Facturacion" title="Facturación" >
                     <Facturacion/>
                 </Tab>
